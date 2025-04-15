@@ -11,7 +11,7 @@ tentativas = 0                                                  # Inicializa o c
 
 while palpite != secreto:                                       # Enquanto o palpite não for igual ao número secreto
     palpite = int(input("Adivinhe o número entre 1 e 100: "))   # Solicita ao usuário um palpite
-    tentativas += 1                                             # Incrementa o contador de tentativas
+    tentativas = tentativas + 1                                 # Incrementa o contador de tentativas
 
     if palpite < secreto:                                       # Se o palpite for menor que o número secreto
         print("Muito baixo! Tente novamente.")
